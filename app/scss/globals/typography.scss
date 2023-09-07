@@ -1,0 +1,82 @@
+@use 'variables' as *;
+@use 'sass:math';
+
+$poppins-light:'pop-light';
+$poppins-regular:'pop-regular';
+$poppins-dark:'pop-dark';
+
+@font-face {
+    font-family: 'pop-light';
+    src: url(../../../assets/fonts/poppins-extralight-webfont.woff) format('woff'),
+    url(../../../assets/fonts/poppins-extralight-webfont.woff2) format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pop-regular';
+    src: url(../../../assets/fonts/poppins-regular-webfont.woff) format('woff'),
+    url(../../../assets/fonts/poppins-regular-webfont.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pop-dark';
+    src: url(../../../assets/fonts/poppins-semibold-webfont.woff) format('woff'),
+    url(../../../assets/fonts/poppins-semibold-webfont.woff2) format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+html{
+    font-size: 15px;
+    font-family: $poppins-regular;
+}
+
+// _____________
+
+header{
+        text-align: center;
+        margin-bottom: 3rem;
+    h1{
+        font-family: $poppins-light;
+        font-size: 1.6rem;
+        margin-bottom: -0.7rem;
+    }
+    h2{
+        font-family: $poppins-dark;
+        font-size: 1.6rem;
+    }
+    p{
+        line-height: 1.5;
+    }
+}
+
+main{
+    article{
+        padding: 1rem 1.8rem 1.5rem 1.8rem;
+        margin-bottom: 1.7rem;
+        border-radius: calc(6/15)*1rem;
+        h3{
+            font-family: $poppins-dark;
+            margin-bottom: -.5rem;
+        }
+        P{
+            line-height: 1.7;
+            font-size: .9rem;
+            margin-bottom: 2rem;
+        }
+    }
+    
+}
+
+.attribution {
+     font-size: 11px;
+    text-align: center; 
+}
+
+@include breakpoint-up('large'){
+    html{
+        font-size: 16px;
+    }
+}

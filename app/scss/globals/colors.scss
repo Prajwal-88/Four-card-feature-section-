@@ -1,0 +1,48 @@
+@use 'variables' as *;
+
+// Primary
+$Red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+// Neutral
+$Very-Dark-Blue: hsl(234, 12%, 34%);
+$Grayish-Blue: hsl(229, 6%, 66%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+
+// -------- 
+
+h1,p{
+    color: $Grayish-Blue;
+}
+h2,h3{
+    color: $Very-Dark-Blue;
+}
+
+body{
+    background-color: $Very-Light-Gray;
+}
+main{
+    article{
+        background-color: #fff;
+        box-shadow: 4px 6.5px 8px 2px rgba($color: #000000, $alpha: .15);
+    }
+    article:nth-child(1){
+        border-top: 4px solid $cyan;
+    }
+    article:nth-child(2){
+        border-top: 4px solid $Red;
+    }
+    article:nth-child(3){
+        border-top: 4px solid $Orange;
+    }
+    article:nth-child(4){
+        border-top: 4px solid $Blue;
+    }
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
